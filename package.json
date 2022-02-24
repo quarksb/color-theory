@@ -3,6 +3,7 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
+    "deploy": "sh deploy.sh",
     "export": "slidev export"
   },
   "dependencies": {

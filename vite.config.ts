@@ -12,5 +12,7 @@ export default defineConfig({
                 },
             }],
         }
-    }
+    },
+    root: './',
+    base: './',
 });
