@@ -27,10 +27,11 @@ title: 五彩斑斓的黑
   <div v-click>在汉语母语的认知中分为红色、橙色、黄色、绿色、蓝色和紫色</div>
   <div v-click>这种对颜色的感知来自可见光谱中的电磁辐射对人眼视锥细胞的刺激</div>
   <div v-click>颜色是由光反射产生的。这种反射是由物体的物理性质决定的，如光的吸收、发射光谱等。</div>
-  <div v-click>但人对颜色的感觉不仅仅由物理性质所决定，还包含心理等许多因素，</div>
+  <div v-click>但人对颜色的感觉不仅仅由物理性质所决定，还包含心理等许多因素</div>
   <div v-click>比如人类对颜色的感受往往收到周围颜色的影响。</div>
   <div v-click>有时人们也将物质产生不同颜色的物理特性直接称之为颜色</div>
 </div>
+
 
 ---
 
@@ -38,12 +39,14 @@ title: 五彩斑斓的黑
 
 <div class="grid gap-y-5">
   <div v-click>电磁波的波长和强度可以有很大区别，在人可以感受的波长范围内（约 312.30nm至745.40nm ）,它被称为可见光，有时也被简称为光</div>
-  <div v-click>比如我们在黑暗中会说这没有光，其实我们说的是这没有可见光，只要有温度的物体都会散发红外线（波长比可见光长的波）。</div>
-  <div v-click>假如我们将一个光源各个波长的强度列在一起，我们就可以获得这个光源的光谱，一个物体的光谱决定这个物体的光学特性，包括它的颜色。不同的光谱可以被人接手为同一个颜色。</div>
+  <div v-click>比如我们在黑暗中会说这没有光，其实我们说的是这没有可见光，只要有温度的物体都会散发红外线（波长比可见光长的电磁波）。</div>
+  <div v-click>假如我们将一个光源各个波长的强度列在一起，我们就可以获得这个光源的光谱，一个物体的光谱决定这个物体的光学特性，包括它的颜色。不同的光谱可以被人接受为同一个颜色。</div>
   <div v-click>虽然我们可以将一个颜色定义为所有这些光谱的总和，但是不同动物所看到的颜色是不同的，不同的人所感受的颜色也是不同的，因此这个定义是相当主观的。</div>
-  <div v-click>颜色不是一种客观存在，它是大部分人基于相同的基因表达出的相同蛋白质对光有着相同的敏感度而达成的共识，但你家的猫主子并不认同你的观点。</div>
+  <div v-click>颜色不是一种客观存在，它是大部分人基于相同的基因表达出的相同蛋白质对光有着相同的敏感度而达成的共识，但你要明白你家的猫主子并不认同你对于物体颜色的感觉。</div>
   <div v-click>一个反射所有的波长的光的表面是白色的，而一个吸收所有波长的光的表面是黑色的。</div>
 </div>
+
+
 ---
 
 # 科技前沿
@@ -64,13 +67,15 @@ title: 五彩斑斓的黑
 <img class="pt-4" src="//upload.wikimedia.org/wikipedia/commons/e/ec/Spectrum441pxWithnm.png" decoding="async">
 
 <div class="grid gap-y-5 pt-10">
-  <div v-click>大多数光源的光谱不是单色的，他们的光是由不同的强度和波长的光混合组成的</div>
+  <div v-click>大多数光源的光谱不是单色的，他们的光是由不同的强度不同波长的光混合组成的</div>
   <div v-click>人眼将许多这样的混合光的颜色与单色光源的光的颜色看成是同样</div>
   <div v-click>比如上面的橙色，实际上是由红色和绿色的光混合组成的（显示器无法产生单色的橙色）</div>
   <div v-click>出于眼睛的生理特性，我们无法区分这两种光的颜色。</div>
   <div v-click>并且许多颜色是不可能是单色的，因为没有没有这样单色的颜色。</div>
-  <div v-click>比如说黑色、灰色和白色就是这样的颜色，因为白色时混合色，淡X色也是这样的颜色。</div>
+  <div v-click>比如说黑色、灰色和白色就是这样的颜色，因为白色是混合色，那些淡X色也是混合色。</div>
 </div>
+
+
 ---
 
 # 颜色的感受
@@ -111,16 +116,28 @@ title: 五彩斑斓的黑
 
 # 色彩的心理恒常性
 
-<div class="grid grid-cols-3 gap-10 text-3xl mt-20">
+<div class="grid grid-cols-3 gap-10 text-3xl mt-10">
   <img 
     v-if="$slidev.nav.currentPage === 8"
-    v-motion
-    :initial="{ x: -80 }"
-    :enter="{ x: 0 }"
     class="col-span-2"
     src="https://decider.com/wp-content/uploads/2015/02/optical-illusion-brain-games.png" >
-  <div v-after class="col-span-1 text-3xl" >场景的光在视网膜上细胞产生的信号并不直接等于人对这个场景的感受，人的大脑会对这些信号处理，并分析比较周围的信号。</div>
+  <div v-click="1" class="col-span-1 text-3xl" >场景的光在视网膜上细胞产生的信号并不直接等于人对这个场景的感受，人的大脑会对这些信号处理，并分析比较周围的信号。</div>
 </div>
+
+<div v-if="$slidev.nav.currentPage === 8"
+  v-motion
+  :initial="{ x: -100 }"
+  :enter="{ x: 0 }"
+  v-click="2"
+  class="absolute w-58/100 h-76/100 top-0"
+>
+  <div class="absolute bg-light-50 w-1/1 h-1/5 top-1/5"></div>
+  <div class="absolute bg-light-50 w-1/1 h-1/5 top-60/100"></div>
+  <div class="absolute bg-light-50 w-1/1 h-1/5 top-100/100"></div>
+  <div class="absolute bg-light-50 w-37/100 h-1/1 top-1/5 left-0"></div>
+  <div class="absolute bg-light-50 w-37/100 h-1/1 top-1/5 right-0"></div>
+</div>
+  
 
 <!--
 todo： 增加动画隔离出两块独立的区域，在对比颜色
@@ -130,11 +147,29 @@ todo： 增加动画隔离出两块独立的区域，在对比颜色
 
 # 颜色的心理作用
 
-<div class="grid gap-5 text-2xl">
-  <div v-click>不同的颜色可以产生不同的心理作用。</div>
-  <div v-click>尽管每个人喜欢的颜色不一，但有些颜色会给人带来相同的感受。这是亿万年的进化刻在我们基因里的，比如红色使人心情激动，这可能因为我们的祖先忘不了那红彤彤的果实，蓝色使人安静，这或许是因为抬头仰望围栏的天空的是祖先最想放松的时候。</div>
+<div class="grid gap-5 p-1 text-2xl">
+  <div v-click="1">不同的颜色可以产生不同的心理作用。</div>
+  <div v-click="2">尽管每个人喜欢的颜色不一，但有些颜色会给人带来相同的感受。</div>
+  <div v-click="3">这是亿万年的进化刻在我们基因里的</div>
+  <div v-click="4">比如红色使人心情激动，这可能因为我们的祖先忘不了那红彤彤的果实</div>
+  <div v-click="5">蓝色使人安静，这或许是因为抬头仰望蔚蓝的天空的时候是我们祖先最想放松的时候</div>
+</div>
+
+<div class="grid grid-cols-3">
+  <img v-click="4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2TWAqOARkqMNVlMcNhkCkdbVjwYH5RFE7PQ&amp;usqp=CAU" >
+  <img v-click="5" src="http://stellashouses.com/wp-content/uploads/2016/03/blue-sky.jpg" >
+</div>
+
+
+---
+
+# 颜色的心理作用
+
+<div class="grid gap-5 p-1 text-2xl">
   <div v-click>对设计师来说颜色的心理作用是非常重要的.</div>
-  <div v-click>除此之外，人对颜色的感受还有许多特别的效应。一个有趣的现象是假如一个画家在绘画的时候只使用少数几种颜色，我们的眼睛还是会试图将灰色或其他中立的颜色看成是缺乏的颜色。假如一幅画中只有红黄黑和白色，那么我们就会吧黄色和黑色的混合看成绿色，把红色很黑色的混合色看成一种紫色，而灰色会显得有点蓝。</div>
+  <div v-click>除此之外，人对颜色的感受还有许多特别的效应</div>
+  <div v-click>一个有趣的现象是假如一个画家在绘画的时候只使用少数几种颜色，我们的眼睛还是会试图将灰色或其他中立的颜色看成是缺乏的颜色。</div>
+  <div v-click>假如一幅画中只有红黄黑和白色，那么我们就会吧黄色和黑色的混合看成绿色，把红色很黑色的混合色看成一种紫色，而灰色会显得有点蓝。</div>
 </div>
 
 
@@ -197,18 +232,28 @@ todo： 增加动画隔离出两块独立的区域，在对比颜色
 
 # 如何实现五彩斑斓的黑
 
-## 方案一
-### 利用结构色
+## 方案一: 利用结构色
 
-在黑色的底色上覆盖一层足够薄的薄膜（利用业界比较成熟的真空镀膜），使其对不同波长的光产生不同的增强或者减弱，
+利用工业界比较成熟的真空镀膜技术在黑色的底色上覆盖一层或多层足够薄的薄膜，[使其对不同波长的光产生不同的增强或者减弱](https://en.wikipedia.org/wiki/Thin-film_interference)，比如让薄膜厚度为薄膜材质中红光的波长（不是真空中的波长）的一半，就可以让改材质正面看爱来是红色，让薄膜厚度不一就可以让黑色看起来五彩斑斓，不同的角度下看起来的颜色都不一样，某些角度下依然看起来是黑色
 
 结构色对观看角度敏感，不同角度看到的颜色不一。
 
 产生结构色的结构尺度为可见光的波长（大约400nm~600nm），想要增强或者减弱特定的颜色需要将加工精度控制在 nm 级别，成本较高
 
-## 方案二
-### 利用大脑的色彩补偿
+
+---
+
+# 如何实现五彩斑斓的黑
+## 方案二: 利用大脑的色彩补偿
 
 在黑色的周围布置明亮的颜色，由于大脑的色彩的补偿效应，黑色看起来会像这个颜色的补偿色
 
-TODO ：demo
+<Image />
+
+
+---
+
+# 如何实现五彩斑斓的黑
+## 方案二: 利用大脑的色彩补偿
+
+<Canvas />

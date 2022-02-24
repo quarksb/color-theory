@@ -8,7 +8,14 @@
   "dependencies": {
     "@slidev/cli": "^0.27.20",
     "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*"
+    "@slidev/theme-seriph": "*",
+    "ant-design-vue": "^2.2.8",
+    "chroma-js": "^2.4.2",
+    "earcut": "^2.2.3",
+    "less": "^4.1.2"
   },
-  "name": "color-theory"
+  "name": "color-theory",
+  "devDependencies": {
+    "vite-plugin-style-import": "^2.0.0"
+  }
 }
